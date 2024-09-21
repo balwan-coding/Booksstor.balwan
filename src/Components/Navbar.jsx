@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SearchBar from "./SearchBar"
 
 function Navbar() {
   return (
@@ -70,18 +71,7 @@ function Navbar() {
               </ul>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              // onChange={handleChaonge}
-            />
-            <button className="btn btn-dark " type="submit">
-              Search
-            </button>
-          </form>
+         <SearchBar/>
         </div>
       </div>
     </nav>
